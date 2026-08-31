@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Simulators.css">
+    <title>Mini Ion Thruster Simulator</title>
+</head>
+<body>
+
+<h1>
+⚡ Earth simulation ⚡
+</h1>
+
+<canvas id="canvas" ></canvas>
+<br>
+
+<div class="controls">
+    <button id="toggle">Start Thruster</button>
+</div>
+<label id="volts">
+    Voltage:
+    <input type="range" id="voltage" min="1500" max="50000" step="100" value="100">
+    <span id="voltageValue">1500 V</span>
+</label>
+<br>
+ <a href="ExpoCover.html"><button class="home">Back to Menu</button></a>
+      <script src="Earth.js"></script>
+</body>
+</html>
+

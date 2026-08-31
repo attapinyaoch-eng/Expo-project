@@ -1,0 +1,131 @@
+html, body{
+    min-height: 100vh;
+
+}
+body {
+ background: linear-gradient( blue, rgb(190, 150, 232) ,white,rgb(190, 150, 232), blue);
+ background-repeat: no-repeat;
+background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(16px, 2.5vw, 30px);
+
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: clamp(24px, 5vw, 48px);
+    margin: 10px 0 20px;
+}
+
+
+#canvas {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+    border: 5px solid black;
+    display: block;
+}
+
+/* Button */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#toggle {
+    background-color: blueviolet;
+    width: 150px;
+    min-height: 50px;
+
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#volts {
+    width: 100%;
+    max-width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: clamp(16px, 3vw, 24px);
+    text-align: center;
+}
+
+#voltage {
+    width: 50%;
+    max-width: 500px;
+}
+
+.home{
+    text-align: center;
+   font-size: clamp(16px, 3vw, 24px);
+   width: 160px;
+   height: 60px;
+font-weight: bolder;
+background-color: rgb(72, 23, 119);
+border-radius: 10px;
+border: none;
+color: white;
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+    }
+
+    #volts {
+        flex-wrap: wrap;
+    }
+
+    #voltage {
+        width: 80%;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+
+    body {
+        padding: 10px;
+    }
+
+    #canvas {
+        border-width: 3px;
+    }
+
+    #toggle {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    #volts {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #voltage {
+        width: 100%;
+    }
+}
